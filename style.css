@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+main{
+    display: none;
+}
+
+
+.navbar{
+   position: absolute;
+    top: 0%;
+    width: 100vw;
+    align-items: baseline;
+}
+a{
+    display: flex;
+    align-items: center;
+    color: #B0B2C3;
+    font-family: cursive;
+    text-decoration: none;
+}
+.logo{
+    width: 70px;
+}
+.contact-logo i{
+    margin-right: 20px; 
+}
+.contact-logo{
+    list-style: none;
+    display: flex;
+}
+.insta{
+    font-size: 30px;
+    color: #B0B2C3;
+}
+.content{
+    position: absolute;
+    top: 100vh;
+    width: 100wh;
+}
+.social-links{
+    position: absolute;
+    top: 30vh;
+    right: 1.5vw;
+    font-size: 40px;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: right;
+}
+.social-links li{
+    margin: 10px;
+}
+
+.social-links li:hover{
+    
+    font-size: 43px;
+}
+
+.about{
+    position: absolute;
+    top:30vh;
+    left: 10vw;
+    color: #ffffff;
+}
+.about h1{
+    font-size: 3em;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about p{
+    font-size: 1em;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+
+
+.view-more{
+    position: absolute;
+    top:80vh;
+    right: 45vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition-duration: 0.5s ;
+}
+.down{
+    font-size: 40px;
+    color: #B0B2C3;   
+    margin-top: 5px;
+}
+.view-more:hover{   
+    margin-top: 5px;
+}
+
+.container{
+    max-width: 90%;
+    background-color: rgb(190, 138, 238);
+    align-items: center;
+}
+.container h1{
+    position: relative;
+    left: 40%;
+    display: inline-flex;
+    justify-content: center;
+    border: 2px solid rgb(71, 71, 214);
+    border-radius: 5px;
+}
+.gotoTop{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: red;
+}
