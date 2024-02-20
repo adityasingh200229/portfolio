@@ -12,7 +12,6 @@ main{
     display: none;
 }
 
-
 .navbar{
    position: absolute;
     top: 0%;
@@ -66,10 +65,13 @@ a{
 
 .about{
     position: absolute;
+    
     top:30vh;
     left: 10vw;
     color: #ffffff;
 }
+
+
 .about h1{
     font-size: 3em;
     font-weight: 700;
@@ -103,8 +105,10 @@ a{
 }
 
 .container{
+    margin-top: -.4%;
+    border-radius: 10px;
     max-width: 90%;
-    background-color: rgb(190, 138, 238);
+    background-color: rgb(189, 164, 212);
     align-items: center;
 }
 .container h1{
@@ -127,4 +131,40 @@ a{
     align-items: center;
     border-radius: 50%;
     background-color: red;
+}
+.col img{
+    max-width: 90%;
+    border-radius: 10px;
+}
+.col img:hover{
+    max-width: 95%;
+    transition: .1s;
+}
+.myWork{
+    margin-top: 3%;
+}
+.row{
+    margin: 3%;
+    padding: 2%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(255, 241, 214);
+}
+.socialLinks{
+    font-size: 30px;
+    list-style: none;
+    display: inline-flex;
+    justify-content: right;
+}
+.socialLinks li{
+    margin: 10px;
+}
+
+.socialLinks li:hover{    
+    font-size: 43px;
+    transition: .5s;
 }

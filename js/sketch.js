@@ -18,7 +18,7 @@ var engine;
 var world;
 var particles =[];
 var boundaries = [];
-var ground;
+
 
 var mConstraint;
 function setup() {
@@ -37,7 +37,7 @@ function setup() {
         }
     });
     Render.run(render);
-    var ground = Bodies.rectangle(395, 600, 815, 50, { isStatic: true, render: { fillStyle: '#060a19' } }),
+    var ground = Bodies.rectangle(395, 600, 1200, 50, { isStatic: true, render: { fillStyle: '#060a19' } }),
     rockOptions = { density: 0.004 },
     rock = Bodies.polygon(170, 450, 8, 20, rockOptions),
     anchor = { x: 170, y: 450 },
