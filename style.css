@@ -106,6 +106,8 @@ a{
 
 .container{
     margin-top: -.4%;
+    position: relative;
+    left: 5%;
     border-radius: 10px;
     max-width: 90%;
     background-color: rgb(189, 164, 212);
@@ -167,4 +169,70 @@ footer{
 .socialLinks li:hover{    
     font-size: 43px;
     transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+.box {
+    background-color: black;
+    width: 100%;
+    position: relative;
+}
+
+p {
+    font-size: 17px;
+    align-items: center;
+}
+
+.box a {
+    display: inline-block;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.modal {
+    width: 100vh;
+    height: 90vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -30vh;
+    
+    left: 45vh;
+    right: 0;
+    background: rgba(230, 0, 0, 0.7);
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modalContent {
+    width: 100vh;
+    
+    position: absolute;
+    background: rgb(199, 143, 143);
+    padding: 1em 2em;
+    border-radius: 4px;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.box-close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #fe0606;
+    text-decoration: none;
+    font-size: 30px;
 }

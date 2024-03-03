@@ -2,5 +2,15 @@
   "dependencies": {
     "matter-js": "^0.19.0",
     "p5": "^1.9.0"
-  }
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Aditya Singh",
+  "main": "boundary.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

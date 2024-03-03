@@ -16,8 +16,8 @@
 
   <script language="javascript" type="text/javascript" src="./js/sketch.js"></script>
   <script language="javascript" type="text/javascript" src="./js/particle.js"></script>
-  
-  
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
@@ -28,7 +28,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="/"><img class="logo" src="./img/logo.png" alt="">
-          <h3 >Aditya Singh</h3>
+          <h3>Aditya Singh</h3>
         </a>
 
         <div class="contact-logo">
@@ -45,20 +45,19 @@
     </nav>
     <ul class="social-links">
       <li class="linkedin-icon">
-        <a href="https://www.linkedin.com/in/aditya-singh-4a8642251/" ><i
-            class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/aditya-singh-4a8642251/"><i class="fab fa-linkedin-in"></i></a>
       </li>
       <li class="twitter-icon">
-        <a href="https://twitter.com/aditya_singh202" ><i class="fab fa-twitter"></i></a>
+        <a href="https://twitter.com/aditya_singh202"><i class="fab fa-twitter"></i></a>
       </li>
       <li class="instagram-icon">
-        <a href="https://www.instagram.com/aditya_singh__2002/" ><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/aditya_singh__2002/"><i class="fab fa-instagram"></i></a>
       </li>
       <li class="gmail-icon">
-        <a href="mailto:aditya.ajaysingh2002@gmail.com" ><i class="far fa-envelope"></i></a>
+        <a href="mailto:aditya.ajaysingh2002@gmail.com"><i class="far fa-envelope"></i></a>
       </li>
       <li class="github-icon">
-        <a href="https://github.com/adityasingh200229" ><i class="fab fa-github"></i></a>
+        <a href="https://github.com/adityasingh200229"><i class="fab fa-github"></i></a>
       </li>
     </ul>
     <div class="view-more">
@@ -69,70 +68,170 @@
   <div class="about">
     <h1>Aditya Singh</h1>
     <p>Full Stack Developer</p>
-    <a href="./about.html"><button type="button" class="btn btn-primary">About Me</button></a>
-    <i class="fa-solid fa-arrow-right-long down"></i>
+
+
+
+
+
+
+
+    <style>
+      /* Popup container - can be anything you want */
+      .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      /* The actual popup */
+      .popup .popuptext {
+        visibility: hidden;
+        width: 500%;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+      }
+
+      /* Popup arrow */
+      .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+
+      /* Toggle this class - hide and show the popup */
+      .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+
+      /* Add animation (fade in the popup) */
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+    </head>
+
+    <body style="text-align:center">
+
+      
+
+      <div class="popup" onclick="myFunction()"><h2>About Me</h2>
+        <span class="popuptext" id="myPopup">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores corporis
+          iure nesciunt blanditiis pariatur debitis nulla. Tempora sint perspiciatis at, aperiam explicabo temporibus
+          iure iste error provident commodi, delectus maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non delectus, in ut laboriosam impedit eligendi provident voluptas cum magni rem nesciunt nulla qui minima ipsa voluptatum, vitae alias, ex cupiditate a reiciendis placeat voluptatem autem nemo officia? Cum debitis laudantium iste consectetur repellat beatae corporis obcaecati, facere assumenda quisquam quo necessitatibus eligendi reprehenderit! Eum quaerat tenetur minus quia iste maxime, nesciunt blanditiis maiores, delectus sapiente id eligendi temporibus, eius alias ea! Delectus tempora iste animi quasi tempore. At minima ipsam obcaecati blanditiis suscipit consequatur provident reprehenderit. Quae ipsam labore nam autem quo excepturi quibusdam? Ipsam sapiente magni aliquam quos consequuntur!</span>
+      </div>
+
+      <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+      </script>
+
+    </body>
   </div>
+
+
   </section>
   <section class="content" id="section1">
     <div class="container">
       <h1>My Works</h1>
-    
-   <div class="myWork">
-    <div class="row">
-      <div class="col col-img">
-        <img src="./img/laptop.png" alt="">
-        
-      </div>
-      <div class="col"><br><br>
-<h2>Welcome to <strong>Tangled Data</strong><br></h2>
-At <strong>Tangled Data</strong>, we understand the importance of efficient and streamlined user management for your business or project. Our User Management System (UMS) is designed to simplify the process of creating, retrieving, updating, and deleting user information with ease. Whether you are a small startup, an established enterprise, or an individual developer, our CRUD system empowers you to manage user data seamlessly.
-      </div>
-    </div>
-    <div class="row">
-      
-      <div class="col"><br><br><br>
-        <h2>Welcome to <strong>Aditya Singh's</strong> Creative Universe!🚀<br></h2>
 
-        Hello there! I'm Aditya Singh, a passionate Web Developer with a love for turning ideas into interactive experiences. As you navigate through this digital space, you'll discover a collection of my projects that showcase not just my skills but also my dedication to crafting meaningful and engaging solutions.
-      </div>
-      <div class="col col-img">
-        <a href="#navbar"><img src="./img/laptop2.png" alt=""></a>
+      <div class="myWork">
+        <div class="row">
+          <div class="col col-img">
+            <img src="./img/laptop.png" alt="">
+
+          </div>
+          <div class="col"><br><br>
+            <h2>Welcome to <strong>Tangled Data</strong><br></h2>
+            At <strong>Tangled Data</strong>, we understand the importance of efficient and streamlined user management
+            for your business or project. Our User Management System (UMS) is designed to simplify the process of
+            creating, retrieving, updating, and deleting user information with ease. Whether you are a small startup, an
+            established enterprise, or an individual developer, our CRUD system empowers you to manage user data
+            seamlessly.
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col"><br><br><br>
+            <h2>Welcome to <strong>Aditya Singh's</strong> Creative Universe!🚀<br></h2>
+
+            Hello there! I'm Aditya Singh, a passionate Web Developer with a love for turning ideas into interactive
+            experiences. As you navigate through this digital space, you'll discover a collection of my projects that
+            showcase not just my skills but also my dedication to crafting meaningful and engaging solutions.
+          </div>
+          <div class="col col-img">
+            <a href="#navbar"><img src="./img/laptop2.png" alt=""></a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-  <footer>
-    <p>Aditya Singh © 2024</p>
-    <div class="black-logo">
-      <img class="logo" src="./img/logo.png" alt="">
-    </div>
-    <ul class="socialLinks">
-      <li class="linkedin-icon">
-        <a href="https://www.linkedin.com/in/aditya-singh-4a8642251/" ><i
-            class="fab fa-linkedin-in"></i></a>
-      </li>
-      <li class="twitter-icon">
-        <a href="https://twitter.com/aditya_singh202" ><i class="fab fa-twitter"></i></a>
-      </li>
-      <li class="instagram-icon">
-        <a href="https://www.instagram.com/aditya_singh__2002/" ><i class="fab fa-instagram"></i></a>
-      </li>
-      <li class="gmail-icon">
-        <a href="mailto:aditya.ajaysingh2002@gmail.com" ><i class="far fa-envelope"></i></a>
-      </li>
-      <li class="github-icon">
-        <a href="https://github.com/adityasingh200229" ><i class="fab fa-github"></i></a>
-      </li>
-    </ul>
-  </footer>
+    <footer>
+      <p>Aditya Singh © 2024</p>
+      <div class="black-logo">
+        <img class="logo" src="./img/logo.png" alt="">
+      </div>
+      <ul class="socialLinks">
+        <li class="linkedin-icon">
+          <a href="https://www.linkedin.com/in/aditya-singh-4a8642251/"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        <li class="twitter-icon">
+          <a href="https://twitter.com/aditya_singh202"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="instagram-icon">
+          <a href="https://www.instagram.com/aditya_singh__2002/"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="gmail-icon">
+          <a href="mailto:aditya.ajaysingh2002@gmail.com"><i class="far fa-envelope"></i></a>
+        </li>
+        <li class="github-icon">
+          <a href="https://github.com/adityasingh200229"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+    </footer>
   </section>
 
 
 
 
 
-  <a class="gotoTop"
-     href="#navbar"><i class="fa-solid fa-arrow-up-long"></i>
+  <a class="gotoTop" href="#navbar"><i class="fa-solid fa-arrow-up-long"></i>
   </a>
 </body>
 
